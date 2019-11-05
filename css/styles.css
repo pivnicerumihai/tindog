@@ -3,11 +3,7 @@ font-family: 'Montserrat', sans-serif; */
 body{
     font-family: "Montserrat 400",sans-serif;
 }
-#title{
-    background-color:#ff4c68;
-    color:white;
-    
-}
+
 h1{
     font-family: 'Montserrat-black', sans-serif;
     font-size: 3.5rem;
@@ -17,11 +13,16 @@ h1{
 h2{
     font-family: 'Montserrat-bold',sans-serif;
     font-size:3rem;
-
-    font-weight: 600;
+     font-weight: 600;
 }
+#title{
+    background-color:#ff4c68;
+    color:white;
+
+}
+
 .container-fluid{
-    padding:3% 15%;
+    padding:3% 15% 7%;
 }
 
 
@@ -51,13 +52,18 @@ h2{
 }
 /* Title Image */
 .title-image{
+    position: absolute;
+    z-index:1;
     width:60%;
     transform: rotate(25deg)
 }
 
 /* Features */
 #features{
+    position: relative;
+    z-index:2;
     padding:7% 15%;
+    background-color:white;
 }
 h3{
     font-family: "Montserrat-Bold",sans-serif;
@@ -113,4 +119,41 @@ h3{
 
 .pricing-card{
     padding:3% 2%;
+}
+#cta{
+    text-align: center;
+    background-color:#ff4c68;
+
+    color:white;
+    
+}
+.cta-text{
+    padding:2% 15%;
+    font-family: 'Montserrat-black',sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+#footer{
+    text-align: center;
+    
+}
+#footer p{
+    color:gray;
+}
+.social-icons{
+    padding-top:5%;
+    padding-bottom: 2%;
+}
+.social-icons i{
+    padding-left:2%;
+}
+@media(max-width:1028px)
+{
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position:static;
+        transform:rotate(0);
+    }
 }
